@@ -67,8 +67,8 @@ class QueryResult extends Object
 				throw new OutOfBoundsException('Cannot fetch docs because bulk document was not queried with include_docs=true');
 			} else {
 				$doc = $row->doc;
-				$doc->_key = $row->key;
-				$doc->_value = $row->value;
+				//$doc->_key = $row->key;
+				//$doc->_value = $row->value;
 				$docs[] = $doc;
 			}
 		}
